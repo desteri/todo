@@ -12,3 +12,12 @@ def second(request):
 
 def third(request):
     return HttpResponse("This is page test3")
+
+def add(request):
+    return render(request, "add.html")
+
+def change(request):
+    return render(request, "change.html")
+
+def delete(request):
+    return render(request, "delete.html")
