@@ -20,10 +20,10 @@ section {
 }
 
 .book_item {
-    border: 2px solid rgb(182, 182, 182);
+    border: 3px solid rgb(0, 0, 0);
     border-radius: 5px;
-    width: 24%;
+    width: 30%;
     padding: 10px 15px;
-    background-color: #ecd3b1;
+    background-color: #a8e76c;
     margin-bottom: 20px;
 }
