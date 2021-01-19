@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgb(39, 32, 32);
+}
+
+section {
+    width: 100%;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.book_list {
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.book_item {
+    border: 2px solid rgb(182, 182, 182);
+    border-radius: 5px;
+    width: 24%;
+    padding: 10px 15px;
+    background-color: #ecd3b1;
+    margin-bottom: 20px;
+}
