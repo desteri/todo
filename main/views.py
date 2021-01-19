@@ -22,3 +22,6 @@ def change(request):
 
 def delete(request):
     return render(request, "delete.html")
+
+def book(request):
+    book_list = BookShop.objects.all()

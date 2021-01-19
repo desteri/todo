@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .book_list {
+            padding: 30px 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .book_item {
+            border: 2px solid rgb(182, 182, 182);
+            border-radius: 5px;
+            width: 24%;
+            padding: 10px 15px;
+            background-color: #ecd3b1;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="book_list">
+            {% for bookshop in book_list %}
+            <div class="book_item">
+                <h4>{{ bookshop.title }}</h4>
+                <p>{{ bookshop.author }}</p>
+                <p>{{ bookshop.date }}</p>
+            </div>    
+            {% endfor %}
+        </div>
+    </section>
+</body>
+</html>
