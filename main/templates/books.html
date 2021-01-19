@@ -1,23 +1,27 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Books</title>
     <link rel="stylesheet" href="{% static 'style/books.css' %}">
 </head>
+
 <body>
-<section>
-    <div class="book_list">
-        {% for bookshop in book_list %}
-        <div class="book_item">
-            <h4>{{ bookshop.title }}</h4>
-            <p>{{ bookshop.author }}</p>
-            <p>{{ bookshop.date }}</p>
-        </div>    
-        {% endfor %}
-    </div>
-</section>
+    <section>
+        
+        <div class="book_list">
+            {% for bookshop in bookshop_list %}
+            <div class="book_item">
+                <h4>{{ bookshop.title }}</h4>
+                <p>{{ bookshop.author }}</p>
+                <p>{{ bookshop.date }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
 </body>
+
 </html>
