@@ -1,7 +1,7 @@
-
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +11,15 @@
     <!-- <link rel="stylesheet" href="./style/checkbox.css"> -->
     <link rel="stylesheet" href="{% static 'style/checkbox.css' %}">
 </head>
+
 <body>
     <section>
         <div class="todo_header">
-            <input class="header_inp" type="text" placeholder="Напишите новую задачу..">
-            <button class="header_btn">Добавить</button>
+            <form action="{% url 'add-todo' %}" method="POST">
+                {% csrf_token %}
+                <input class="header_inp" name="todo_text" type="text" placeholder="Напишите новую задачу..">
+                <button class="header_btn">Добавить</button>
+            </form>
         </div>
         <div class="todo_list">
             {% for todo in todo_list %}
@@ -39,4 +43,5 @@
         </div>
     </section>
 </body>
+
 </html>
