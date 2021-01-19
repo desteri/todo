@@ -25,3 +25,4 @@ def delete(request):
 
 def book(request):
     book_list = BookShop.objects.all()
+    return render(request, "books.html", {"book_list": book_list})
