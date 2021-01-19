@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Books</title>
     <style>
+        section {
+            width: 100%;
+            padding: 20px;
+            align-items: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
         .book_list {
             padding: 30px 20px;
             display: flex;
@@ -12,6 +19,7 @@
             flex-wrap: wrap;
             width: 100%;
         }
+
         .book_item {
             border: 2px solid rgb(182, 182, 182);
             border-radius: 5px;
@@ -25,11 +33,11 @@
 <body>
     <section>
         <div class="book_list">
-            {% for bookshop in book_list %}
+            {% for todo in book_list %}
             <div class="book_item">
-                <h4>{{ bookshop.title }}</h4>
-                <p>{{ bookshop.author }}</p>
-                <p>{{ bookshop.date }}</p>
+                <h4>{{ todo.title }}</h4>
+                <p>{{ todo.author }}</p>
+                <p>{{ todo.date }}</p>
             </div>    
             {% endfor %}
         </div>
