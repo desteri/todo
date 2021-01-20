@@ -15,3 +15,4 @@ class BookShop(models.Model):
     author = models.CharField(max_length=150)
     year = models.CharField(max_length=50)
     date = models.DateTimeField(auto_now_add=True)
+    is_favorites = models.BooleanField(default=False)
