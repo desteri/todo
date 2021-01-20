@@ -57,8 +57,8 @@ section {
 .btn_fav {
     padding: 10px 20px;
     color: white;
-    background-color: salmon;
-    border: 2px solid sienna;
+    background-color: rgb(196, 108, 99);
+    border: 2px solid rgb(133, 67, 37);
     border-radius: 10px;
     cursor: pointer;
     text-transform: uppercase;
@@ -69,8 +69,8 @@ section {
 .btn_del {
     padding: 10px 20px;
     color: white;
-    background-color: salmon;
-    border: 2px solid sienna;
+    background-color: rgb(196, 108, 99);
+    border: 2px solid rgb(133, 67, 37);
     border-radius: 10px;
     cursor: pointer;
     text-transform: uppercase;

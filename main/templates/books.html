@@ -30,9 +30,11 @@
             <div class="book_item">
                 <h3>{{ bookshop.title }}</h3>
                 <h4>{{ bookshop.author }}</h4>
-                <p>{{ bookshop.date }}</p> 
-                <button class="btn_fav">Избранное</button>
-                <button class="btn_del">Удалить</button>
+                <p>{{ bookshop.date }}</p>
+                <div class="action">
+                    <a href="{% url 'chk-book' bookshop.id %}">Избранное</a>
+                    <a href="{% url 'delete-book' bookshop.id %}">Удалить</a>
+                </div>
             </div>
             {% endfor %}
         </div>
