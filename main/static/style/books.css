@@ -58,13 +58,8 @@ section {
     background-color:  #d3e246;
 }
 
-.action a {
-    display: inline-block;
-    background: #8C959D; 
-    color: #fff; 
-    padding: 1rem 1.5rem; 
-    text-decoration: none; 
-    border-radius: 3px;
+.action {
+    display: flex;
 }
 
 .action img {
