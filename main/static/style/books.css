@@ -80,15 +80,9 @@ section {
     border: 3px solid #51571a;
 }
 
-.book_hdr {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 35px;
-}
-
 .book_hdr h3, h4{
     font-size: 18px;
+    margin-bottom: 5px;
 }
 
 .book_ftr {

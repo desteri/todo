@@ -75,5 +75,4 @@ def detail(request):
 
 def detail_book(request, id):
     books = BookShop.objects.get(id=id)
-    books.save()
     return redirect(detail)
