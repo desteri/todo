@@ -34,6 +34,17 @@ def add_todo(request):
     todo.save()
     return redirect(test)
 
+def delete_todo(request, id):
+    todo = ToDo.objects.get(id=id)
+    todo.delete()
+    return redirect(test)
+
+def mark_todo(request, id):
+    todo = ToDo.objects.get(id=id)
+    todo.is_favorite = True
+    todo.save()
+    return redirect(test)
+
 def add_book(request):
     form = request.POST
     title = form["book_title"]
@@ -46,17 +57,6 @@ def add_book(request):
     books = BookShop(title=title, subtitle=subtitle, description=description, price=price, genre=genre, author=author, year=year)
     books.save()
     return redirect(book)
-    
-def delete_todo(request, id):
-    todo = ToDo.objects.get(id=id)
-    todo.delete()
-    return redirect(test)
-
-def mark_todo(request, id):
-    todo = ToDo.objects.get(id=id)
-    todo.is_favorite = True
-    todo.save()
-    return redirect(test)
 
 def delete_book(request, id):
     books = BookShop.objects.get(id=id)

@@ -27,13 +27,22 @@
         </div>
         <div class="book_list">
             {% for bookshop in bookshop_list %}
-            <div class="book_item">
+            <div class="book_item
+                {% if bookshop.is_favorites %}
+                    chk
+                {% endif %}
+            ">
                 <h3>{{ bookshop.title }}</h3>
                 <h4>{{ bookshop.author }}</h4>
                 <p>{{ bookshop.date }}</p>
                 <div class="action">
-                    <a href="{% url 'chk-book' bookshop.id %}">Избранное</a>
-                    <a href="{% url 'delete-book' bookshop.id %}">Удалить</a>
+                    {% if bookshop.is_favorites %}
+                        <a href="{% url 'chk-book' bookshop.id %}"><img src="{% static './icons/light_star.svg' %}"></a>
+                    {% else %}
+                        <a href="{% url 'chk-book' bookshop.id %}"><img src="{% static './icons/star.svg' %}"></a>
+                    {% endif %}
+
+                    <a href="{% url 'delete-book' bookshop.id %}"><img src="{% static './icons/delete.svg' %}"></a>
                 </div>
             </div>
             {% endfor %}

@@ -54,26 +54,22 @@ section {
     margin-bottom: 20px;
 }
 
-.btn_fav {
-    padding: 10px 20px;
-    color: white;
-    background-color: rgb(196, 108, 99);
-    border: 2px solid rgb(133, 67, 37);
-    border-radius: 10px;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 18px;
+.book_item.chk {
+    background-color:  #d3e246;
 }
 
-.btn_del {
-    padding: 10px 20px;
-    color: white;
-    background-color: rgb(196, 108, 99);
-    border: 2px solid rgb(133, 67, 37);
-    border-radius: 10px;
+.action a {
+    display: inline-block;
+    background: #8C959D; 
+    color: #fff; 
+    padding: 1rem 1.5rem; 
+    text-decoration: none; 
+    border-radius: 3px;
+}
+
+.action img {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
     cursor: pointer;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 18px;
 }
