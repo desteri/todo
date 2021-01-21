@@ -5,6 +5,9 @@
     color: rgb(39, 32, 32);
 }
 
+
+/* section
+--------------- */
 section {
     width: 100%;
     padding: 20px;
@@ -14,8 +17,11 @@ section {
     font-family: 'Times New Roman', Times, serif;
 }
 
+
+/* header
+--------------- */
 .book_form {
-    width: 100%;
+    width: 80%;
 }
 
 .book_inp {
