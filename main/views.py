@@ -68,3 +68,12 @@ def chk_book(request, id):
     books.is_favorites = True
     books.save()
     return redirect(book)
+
+def detail(request):
+    bookshop_list = BookShop.objects.all()
+    return render(request, "books_detail.html", {"bookshop_list": bookshop_list})
+
+def detail_book(request, id):
+    books = BookShop.objects.get(id=id)
+    books.save()
+    return redirect(detail)

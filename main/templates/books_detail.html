@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style/books.css' %}">
+</head>
+
+<body>
+    <section>
+        <div class="detail">
+            {% for bookshop in bookshop_list %}
+                <p>{{ bookshop.subtitle }}</p>
+                <p>{{ bookshop.description }}</p>
+                <h3>{{ bookshop.price }}</h3>
+                <p>{{ bookshop.genre }}</p>
+                <p>{{ bookshop.year }}</p>
+            {% endfor %}
+        </div>
+    </section>
+</body>
+
+</html>

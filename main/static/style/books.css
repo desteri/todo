@@ -111,3 +111,12 @@ section {
     margin: 0 5px;
     cursor: pointer;
 }
+
+.detail {
+    border: 3px solid #4e6b32;
+    border-radius: 5px;
+    width: 20%;
+    padding: 10px 15px;
+    background-color: #a8e76c;
+    margin-bottom: 20px;
+}
