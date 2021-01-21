@@ -33,7 +33,7 @@
                 {% endif %}
             ">
                 <div class="book_hdr">
-                    <h3>Title: <a href="{% url 'detail-book' bookshop.id %}">{{ bookshop.title }}</a></h3>
+                    <h3>Title: {{ bookshop.title }}</a></h3>
                     <h4>Author: {{ bookshop.author }}</h4>
                 </div>
                 <div class="book_ftr">
@@ -48,8 +48,10 @@
                         <a href="{% url 'delete-book' bookshop.id %}"><img src="{% static './icons/delete.svg' %}"></a>
                     </div>
                 </div>
+                <button><a href="{% url 'detail-book' bookshop.id %}">About the book</a></button>
             </div>
             {% endfor %}
+            
         </div>
     </section>
 </body>

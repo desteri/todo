@@ -12,11 +12,16 @@
 <body>
     <section>
         <div class="detail">
-                <p><b>Subtitle:</b> {{ bookshop.subtitle }}</p>
-                <p><b>Description:</b> {{ bookshop.description }}</p>
-                <p><b>Price:</b> {{ bookshop.price }}</p>
-                <p><b>Genre:</b> {{ bookshop.genre }}</p>
-                <p><b>Year:</b> {{ bookshop.year }}</p>
+            <!-- {% for bookshop in bookshop_list %} -->
+            <h2>Title: {{ bookshop.title }}</h2>
+            <p><b>Subtitle:</b> {{ bookshop.subtitle }}</p>
+            <p><b>Description:</b> {{ bookshop.description }}</p>
+            <p><b>Price:</b> {{ bookshop.price }}</p>
+            <p><b>Genre:</b> {{ bookshop.genre }}</p>
+            <p><b>Author:</b> {{ bookshop.author }}</p>
+            <p><b>Year:</b> {{ bookshop.year }}</p>
+            <p><b>Date:</b> {{ bookshop.date }}</p>
+            <!-- {% endfor %} -->
         </div>
     </section>
 </body>
