@@ -69,7 +69,7 @@ section {
 .book_item {
     border: 3px solid rgb(0, 0, 0);
     border-radius: 5px;
-    width: 15%;
+    width: 20%;
     padding: 10px 15px;
     background-color: #a8e76c;
     margin-bottom: 20px;
@@ -82,6 +82,7 @@ section {
 
 .book_hdr {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     min-height: 35px;
 }
