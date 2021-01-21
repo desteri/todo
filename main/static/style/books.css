@@ -67,7 +67,7 @@ section {
 }
 
 .book_item {
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid #4e6b32;
     border-radius: 5px;
     width: 20%;
     padding: 10px 15px;
