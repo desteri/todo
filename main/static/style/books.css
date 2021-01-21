@@ -58,11 +58,31 @@ section {
     background-color:  #d3e246;
 }
 
-.book_item .action {
+.book_hdr {
+    display: flex;
+    align-items: center;
+    min-height: 35px;
+}
+
+.book_hdr h3, h4{
+    font-size: 18px;
+}
+
+.item_ftr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book_ftr p {
+    font-size: 15px;
+}
+
+.book_ftr .action {
     display: flex;
 }
 
-.book_item img {
+.book_ftr img {
     width: 20px;
     height: 20px;
     margin: 0 5px;
