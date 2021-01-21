@@ -68,7 +68,7 @@ section {
     font-size: 18px;
 }
 
-.item_ftr {
+.book_ftr {
     display: flex;
     justify-content: space-between;
     align-items: center;
