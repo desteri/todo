@@ -77,7 +77,3 @@ def detail_book(request, id):
     books = BookShop.objects.get(id=id)
     books.save()
     return redirect(detail)
-
-def get_absolute_url(self):
-    from django.urls import reverse
-    return reverse('bookshop.title.', args=[str(self.id)])
