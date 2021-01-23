@@ -71,9 +71,8 @@ def chk_book(request, id):
 
 def detail(request):
     bookshop_list = BookShop.objects.all()
-    return render(request, "books_detail.html", {"bookshop_list": bookshop_list})
+    return render(request, "books_detail.html", {"bookshop_list": bookshop_list} )
 
 def detail_book(request, id):
-    books = BookShop.objects.get(id=id)
-    books.save()
-    return redirect(detail)
+    bookshop_filter = BookShop.objects.filter(id=id)
+    return render(request, "books_detail.html", {"bookshop_list": bookshop_filter})
