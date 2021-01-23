@@ -28,14 +28,14 @@ section {
     padding: 12px 5px;
     font-size: 18px;
     width: 20%;
-    margin-bottom: 10px;
 }
 
 .book_btn {
+    margin-left: 10px;
     padding: 10px 20px;
-    color: snow;
-    background-color: rgb(111, 54, 158);
-    border: 2px solid rgb(70, 16, 83);
+    color: rgb(0, 0, 0);
+    background-color: rgb(210, 172, 248);
+    border: 3px solid rgb(130, 30, 155);
     border-radius: 10px;
     cursor: pointer;
     text-transform: uppercase;
@@ -52,7 +52,7 @@ section {
 }
 
 .book_btn:hover {
-    background-color: rgb(182, 83, 169);
+    background-color: rgb(230, 107, 213);
 }
 
 
@@ -67,22 +67,23 @@ section {
 }
 
 .book_item {
-    border: 3px solid #4e6b32;
+    border: 5px solid #4e6b32;
     border-radius: 5px;
     width: 20%;
     padding: 10px 15px;
     background-color: #a8e76c;
     margin-bottom: 20px;
+    margin-left: 3px;
 }
 
 .book_item.chk {
     background-color:  #d3e246;
-    border: 3px solid #51571a;
+    border: 5px solid #51571a;
 }
 
 .book_hdr h3, h4{
     font-size: 18px;
-    margin-bottom: 5px;
+    padding-bottom: 5px;
 }
 
 .book_ftr {
@@ -93,6 +94,7 @@ section {
 
 .book_ftr p {
     font-size: 15px;
+    padding-bottom: 5px;
 }
 
 .book_ftr .action {
@@ -106,7 +108,21 @@ section {
     cursor: pointer;
 }
 
-.book_ftr a {
+.book_item button {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: inherit;
+    padding: 5px;
+    border: 3px solid rgb(99, 99, 99);
+    border-radius: 10px;
+    background-color: rgb(236, 225, 248);
+}
+
+.book_item button:hover {
+    background-color: rgb(154, 126, 185);
+}
+
+.book_item button a {
     text-decoration: none;
 }
 
@@ -116,6 +132,13 @@ section {
     width: 20%;
     padding: 10px 15px;
     background-color: #a8e76c;
-    margin-bottom: 20px;
+}
+
+.detail h2 {
+    padding-bottom: 10px;
+}
+
+.detail p {
+    padding-bottom: 5px;
 }
 

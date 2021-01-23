@@ -65,7 +65,7 @@ def delete_book(request, id):
 
 def chk_book(request, id):
     books = BookShop.objects.get(id=id)
-    books.is_favorites = True
+    books.is_favorites = not books.is_favorites
     books.save()
     return redirect(book)
 
