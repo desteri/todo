@@ -103,6 +103,10 @@ section {
     font-size: 18px;
 }
 
+.item_chk h4 a {
+    text-decoration: none;
+}
+
 .item_ftr {
     display: flex;
     justify-content: space-between;

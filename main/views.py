@@ -76,3 +76,9 @@ def detail(request):
 def detail_book(request, id):
     bookshop_filter = BookShop.objects.filter(id=id)
     return render(request, "books_detail.html", {"bookshop_list": bookshop_filter})
+
+def close_todo(request, id):
+    todo = ToDo.objects.get(id=id)
+    todo.is_closed = not todo.is_closed
+    todo.save()
+    return redirect(test)
