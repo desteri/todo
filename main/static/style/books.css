@@ -123,6 +123,10 @@ section {
     background-color: rgb(154, 126, 185);
 }
 
+.book_item button:focus {
+    outline: none;
+}
+
 .book_item button a {
     text-decoration: none;
 }
